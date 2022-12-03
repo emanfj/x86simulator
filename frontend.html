@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>x86 simulator</title>
+  <link rel="stylesheet" href="frontend.css">
+</head>
+
+<body>
+  <header id="head">
+    <button onClick="window.location.reload();">RELOAD</button>
+    <div id="logo">
+      <img src="logo.png" alt="logo image">
+      <h1>x86 simulator</h1> 
+    </div>
+  </header>
+
+  <section class="input-sec">
+    <div class="input-box">
+      <h2>ENTER YOUR INSTRUCTION</h2>
+      <form>
+        <div class="input-field">
+          <input type ="text" name="" required="">
+        </div>
+      <input type="submit" value="SHOW RESULT" name="" class="result-btn"> 
+      </form>
+    </div>
+  </section>
+
+  <h2 id="code-heading">
+    MACHINE CODE FOR THIS INSTRUCTION!
+  </h2>
+
+  <section class="code-sec">
+    <div class="machine-code">
+      <table id="mcode">
+        <thead>
+          <tr>
+              <th>OPCODE</th>
+              <th>DIRECTION</th>
+              <th>MODE</th>
+              <th>OPERAND</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>101</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <h2 id="memreg-heading">
+    REGISTERS AND MEMORY
+  </h2>
+
+  <section class="tables">
+    <div class="reg-table">
+      <table id="registers">
+        <thead>
+            <tr>
+                <th>REGISTER</th>
+                <th>DATA STORED</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="ah">AH</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td id="bx">AL</td>
+                <td>1010</td>
+            </tr>
+            <tr>
+              <td id="bh">BH</td>
+              <td>1010</td>
+            </tr>
+            <tr>
+              <td id="bl">BL</td>
+              <td>1010</td>
+            </tr>
+            <tr>
+              <td id="ch">CH</td>
+              <td>1010</td>
+            </tr>
+            <tr>
+              <td id="cl">CL</td>
+              <td>1010</td>
+            </tr>
+            <tr>
+              <td id="dh">DH</td>
+              <td>1010</td>
+            </tr>
+            <tr>
+              <td id="dl">DL</td>
+              <td>1010</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="mem-table">
+      <table id="memory">
+        <thead>
+            <tr>
+                <th>ADDRESS</th>
+                <th>MEMORY</th>
+                <th>ADDRESS</th>
+                <th>MEMORY</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1000</td>
+                <td>1000</td>
+                <td>1000</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>1010</td>
+                <td>1000</td>
+                <td>1000</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td>1010</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td>1000</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+  </section>
+
+  <h2 id="cycle-heading">
+    CLOCK CYCLES USED IN THIS INSTRCUTION!
+  </h2>
+
+  <section class="clk-cycle">
+    <div id="image1">
+      <img src="bg.jpg" alt="FETCH">
+    </div>
+    <div id="image2">
+      <img src="bg.jpg" alt="DECODE">
+    </div>
+    <div id="image2">
+      <img src="bg.jpg" alt="EXECUTE">
+    </div>
+    <div id="image4">
+      <img src="bg.jpg" alt="LOAD">
+    </div>
+    <div id="image5">
+      <img src="bg.jpg" alt="STORE">
+    </div>
+  </section>
+</body>
+</html>
