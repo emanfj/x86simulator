@@ -48,11 +48,16 @@ body{
     width: 90px;
     margin-top: 50px;
     margin-left: 50px;
-    background-color: #37128f;
+    background-color: #333;
     color: #efefef;
     border: none;
     padding: 10px 20px;
     border-radius: 50px;
+    cursor: pointer;
+}
+
+#head button:hover{
+    background: #37128f;
 }
 
 .input-sec{
@@ -238,17 +243,18 @@ body{
 }
 
 #image1 img{
-    height: 160px;
+    height: 100px;
 }
 #image2 img{
-    height: 160px;
+    height: 100px;
 }
 #image3 img{
-    height: 160px;
+    height: 100px;
 }
 #image4 img{
-    height: 160px;
+    height: 100px;
 }
 #image5 img{
-    height: 160px;
+    height: 100px;
 }
+
